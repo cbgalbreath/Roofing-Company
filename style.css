@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    height: 250px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,14 +31,24 @@ header{
 .container{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    width: 80vw;
 }
 
 .section{
-    border: 1px;
-    flex-grow: 1;
+    flex-grow: 2;
+    padding: 10px; 
 }
-.image{
-    width: 90%
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.photo{
+    width: 100%
 }
 
 .title{
@@ -54,17 +64,17 @@ header{
 .services{
     color: teal;
     font-size: 32px;
-}
-
-.section{
-    height: 100vh;
-    width: auto;
+    list-style: none;
 }
 
 footer{
-    height: 50px;
-    position: absolute;
-    margin-bottom: 0;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    text-align: center;
 }
 
 button{
@@ -84,4 +94,9 @@ button{
     background-color: red;
     color: white;
     font-size: 20px;
+}
+
+.call{
+    color: red;
+    font-size: 32px;
 }
