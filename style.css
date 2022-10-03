@@ -63,6 +63,7 @@ header{
     color: teal;
     font-size: 32px;
     list-style: none;
+    padding: 5px;
 }
 
 footer{
@@ -80,6 +81,11 @@ button{
     width: 300px;
     border-radius: 10px;
     border: 0;
+    margin: 10px;
+}
+
+.button-container{
+    margin: 10px;
 }
 
 .e-mail{
@@ -97,4 +103,36 @@ button{
 .call{
     color: red;
     font-size: 32px;
+}
+
+@media(width < 1000px){
+    header{
+        height:100px;
+    }
+    .logo{
+        width: 200px;
+        height: 100px;
+    }
+
+    .services, .call{
+        font-size: 20px;
+    }
+
+    button{
+        margin: 10px;
+        width: 200px;
+        font-size: 10px;
+    }
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .photo{
+        width: 100%;
+    }
+
+    .section.image{
+        flex-shrink: 0;
+    }
 }
